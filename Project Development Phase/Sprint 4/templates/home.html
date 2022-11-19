@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Loan Approval Predictor</title>
+    <link rel="stylesheet" href="home.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+     
+      *{
+        background-color:inherit;
+        font-family: 'Roboto', sans-serif;
+        margin:0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+      }
+
+      .main1{
+        min-height: 100vh;
+        width :100%;
+        background-image: linear-gradient(
+          #1ecbe1,
+          #1ecbe1
+        ),url('pic.jpg');
+        background-size: cover;
+        color: #ffffff;
+      }
+      .btn {
+        border: 1px solid #fafafa;
+        background: none;
+        padding: 20px 100px;
+        font-size: 30px;
+        font-family: "montserrat";
+        cursor: pointer;
+        margin: 50px;
+        transition: 0.8s;
+        position: relative;
+        overflow: hidden;
+
+      }
+      .btn1 {
+        color: black;
+        background: white;
+        border-color: black;
+        border-style: groove;
+        border-width: 5px;
+        border-radius: 20px;
+       
+      }
+      .btn1:hover {
+        color: rgb(91, 189, 255);
+        background: grey;
+      }
+      .btn::before {
+        content: "Predict";
+        position: absolute;
+        left: 0;
+
+        width: 100%;
+        height: 0%;
+        background: #ffffff;
+        z-index: 5;
+        transition: 0.8s;
+      }
+      .btn1::before {
+        top: -150;
+        border-radius: 100% 100% 50% 50%;
+      }
+      .btn1:hover::before {
+        height: 180%;
+      }
+      html {
+        height: 100%;
+      }
+
+      h1 {
+        font-size: 60px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      h2 {
+        font-size: 50px;
+        font-family: "Poppins", sans-serif;
+      }
+      h3 {
+        margin-top: 30px;
+        font-size: 30px;
+        font-family: "Poppins", sans-serif;
+      }
+      #footer {
+        margin-bottom: 20px;
+      }
+      footer a {
+        text-decoration: none;
+        color: white;
+        border-color: aquamarine;
+        background: rgb(138, 138, 249);
+        border-radius: 10px;
+        padding: 10px;
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <center>
+
+        <div class="main1">
+          <br><br><br><br><br><br>
+            <h1>Smart Loan Approval Predictor</h1>
+            <br><br><br><br><br>
+          <h2>Welcome to loan predictor</h2>
+          <h3>
+            Click the Predict button and enter your details to know about your
+            Loan Approval
+          </h3>
+
+          <div class="container">
+            <a href="predict.html">
+              <button class="btn btn1" onclick="predict.html">Predict</button>
+            </a>
+          </div>
+        </div>        
+        
+
+        <footer>
+          <div id="footer">
+            
+          </div>
+        </footer>
+      </center>
+    </main>
+  </body>
+</html>

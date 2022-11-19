@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Loan Predictor</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+    *{
+        background-color:inherit;
+        font-family: 'Roboto', sans-serif;
+        margin:0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+      }
+
+      .section-padding{
+        min-height: 70vh;
+        width :100vw;
+        background-image: linear-gradient(
+          rgb(0, 0, 0),
+          rgba(0, 203, 230, 0.884)
+        ),url('dollar.jpg');
+        background-size: cover;
+        color: #f2f2f2;
+        padding-top: 40vh;
+      }
+      .btn {
+        border: 1px solid #fafafa;
+        background: none;
+        padding: 20px 100px;
+        font-size: 30px;
+        font-family: "montserrat";
+        cursor: pointer;
+        margin: 50px;
+        transition: 0.8s;
+        position: relative;
+        overflow: hidden;
+
+      }
+      .btn1 {
+        color: rgb(245, 238, 238);
+        background: rgb(0, 0, 0);
+        border-color: black;
+        border-style: groove;
+        border-width: 5px;
+        border-radius: 20px;
+       
+      }
+      
+      
+      html {
+        height: 100%;
+      }
+
+      h1 {
+        font-size: 60px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      h2 {
+        font-size: 50px;
+        font-family: "Poppins", sans-serif;
+      }
+      h3 {
+        margin-top: 30px;
+        font-size: 30px;
+        font-family: "Poppins", sans-serif;
+      }
+
+
+    footer {
+      background: rgb(31, 25, 25);
+      padding: 60px 0;
+      text-align: center;
+    }
+    footer img {
+      max-width: 400px;
+    }
+    
+  </style>
+
+  <body>   
+    
+    <section id="about" class="section-padding">
+      <div class="container grid">
+        <div class="left-content">
+          <h4>Considering the information provided,<br><h3>{{prediction_text}}</h3></h4>
+        </div>
+      </div>
+      <div class="container grid">
+        <h3 class="heading"><center>{{result}}</center></h3>
+      </div>
+
+      <center><a href="http://127.0.0.1:5000/">
+        <button class="btn btn1" onclick="home.html">HOME</button>
+      </a></center>
+    </section>
+    <footer>
+      <div class="container">
+        <a href="#">
+          <p>Designed by....</p><br>
+          <p>Riyas</p>
+          <p>Nayeem</p>
+          <p>Abrar</p>
+          <p>Bilal</p>
+        </a>
+      </div>
+    </footer>
+    
+   
+  </body>
+</html>
